@@ -1,0 +1,41 @@
+import os
+
+# Get the absolute path of the project's root directory
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Wake Word Configuration
+WAKE_WORD = "Hey Jarvis"
+PV_PORCUPINE_API_KEY = "YOUR_PVPORCUPINE_API_KEY"  # Replace with your Picovoice API key
+
+# LLM Configuration
+# Supported LLMs: "ollama", "gemini", "claude", "chatgpt"
+LLM_PROVIDER = "ollama"
+VISION_MODEL = "qwen3-vl"
+
+# Ollama Configuration
+OLLAMA_MODEL = "qwen3:8b"
+OLLAMA_HOST = "http://localhost:11434"
+
+# Gemini Configuration
+GEMINI_API_KEY = ""
+
+# Claude Configuration
+CLAUDE_API_KEY = ""
+
+# ChatGPT Configuration
+CHATGPT_API_KEY = ""
+
+# STT Configuration
+# Supported STT engines: "whisper", "google"
+STT_ENGINE = "whisper"
+
+# TTS Configuration
+# Supported TTS engines: "elevenlabs", "google", "jarvis"
+TTS_ENGINE = "google"
+ELEVENLABS_API_KEY = ""
+JARVIS_VOICE_FILE = (
+    "tts/jarvis.wav"  # Replace with the actual path to the Jarvis voice file
+)
+
+# MCP Server Configuration
+MCP_SERVERS = []
